@@ -73,7 +73,6 @@ app.post("/register", function(req, res) {
     });
 });
 
-
 // Server is up and running on this port !
 app.listen(3000, function() {
     console.log("Server is up and running on port 3000");
