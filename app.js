@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
     password: String
 });
 
-
+// Used .env file
 userSchema.plugin(encrypt, { secret: process.env.SECRET, encryptedFields: ["password"] }); //this will encrypt the entire database without encry. fields op.
 
 // Database model
